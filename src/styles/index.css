@@ -32,11 +32,11 @@ ul{
 }
 
 .deleteBtn{
-    display: block;
+    display: none;
     font-weight: bold;
 }
 
-.taskItem:hover + .deleteBtn {
+.taskItem:hover .deleteBtn {
     display: block;
     font-weight: bold;
 }

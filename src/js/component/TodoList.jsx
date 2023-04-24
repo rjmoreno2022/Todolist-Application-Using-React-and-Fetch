@@ -27,12 +27,13 @@ export const TodoList = () => {
 		const filteredTasks = tasks.filter(task => task.id !== indexItem );
 		setTasks(filteredTasks);
 		setTaskCount(taskCount - 1);
+
 	};
 
 	return (
 		<div className="" style={{ minWidth: "30rem" }}>
-			<h1 className='text-center title m-3' >todos</h1>
-			<ul className="list-group">
+			<h1 className='text-center title mt-3' >todos</h1>
+			<ul className="list-group mb-4">
 				<li className="list-group-item d-flex ">
 					<input 
 						className='inputTask'
@@ -50,7 +51,7 @@ export const TodoList = () => {
 				))}
 
 				<li className="list-group-item lastRow p-2">
-					<span className='TaskCount'>{taskCount + " item left"}</span>
+					<span className='TaskCount'>{taskCount === 0 ? "No tasks, add a task" : taskCount + " item left"}</span>
 				</li>
 			</ul>
 		</div>
