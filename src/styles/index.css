@@ -48,6 +48,19 @@ ul{
     border-color: red;
 }
 
+.deleteAllBtn{
+    color: lightgrey;
+    border-color: lightgrey;
+    background-color: white;
+    font-weight: bold;
+}
+
+.deleteAllBtn:hover {
+    color: red;
+    background-color: white;
+    border-color: red;
+}
+
 .list-group{
     border-radius: 0%;
 }
